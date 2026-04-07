@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="page-title">Encuentra a tu mejor amigo</h1>
+
+<div class="dog-grid">
+    {% for dog in dogs %}
+    <div class="dog-card">
+        <img src="{{ url_for('static', filename='img/' + dog.image_filename) }}" alt="{{ dog.name }}" class="dog-image">
+        
+        <div class="dog-info">
+            <h2 class="dog-name">{{ dog.name }}</h2>
+            <p class="dog-meta">Raza: <strong>{{ dog.breed }}</strong> | Edad: <strong>{{ dog.age }} años</strong></p>
+            <a href="/adoptar/{{ dog.id }}" class="btn-adopt">Adoptar a {{ dog.name }}</a>
+        </div>
+    </div>
+    {% else %}
+    <p>No hay perritos disponibles por ahora.</p>
+    {% endfor %}
+</div>
+{% endblock %}

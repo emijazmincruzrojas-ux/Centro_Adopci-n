@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Adopción de Mascotas</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="/" class="logo">🐾 Centro Adopción</a>
+            <nav class="nav-links">
+                <a href="/">Inicio</a>
+                <a href="/">Adoptar</a>
+                <a href="/" class="btn-contact">Donar</a>
+                <a href="/historial-adopciones" class="nav-link">Ver Adopciones</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Centro Adopción</h3>
+                <p>Cambiando vidas, una patita a la vez.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces útiles</h4>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Preguntas frecuentes</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>📍 la paz, El Salvador</p>
+                <p>✉️ contacto@centroadopcion.org</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Centro de Adopción de Mascotas.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

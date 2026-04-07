@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="confirm-container" style="text-align: center; padding: 40px;">
+    
+    <div style="font-size: 60px; margin-bottom: 20px;">🎉</div>
+
+    <h1 class="confirm-title" style="color: #ff6b6b; font-size: 32px; margin-bottom: 10px;">
+        ¡Felicidades!
+    </h1>
+    
+    <p style="font-size: 18px; color: #2c3e50; margin-bottom: 30px;">
+        Has adoptado a <strong>{{ dog_name }}</strong> exitosamente. Gracias por darle un hogar amoroso. ❤️
+    </p>
+
+    <div style="display: flex; flex-direction: column; gap: 15px; max-width: 300px; margin: 0 auto;">
+        <a href="/historial-adopciones" class="btn-confirm" style="text-decoration: none; display: block; background-color: #2ecc71;">
+            Ver Historial de Adopciones
+        </a>
+
+        <a href="/" class="btn-confirm" style="text-decoration: none; display: block; background-color: #ff6b6b;">
+            🔙 Volver al Catálogo
+        </a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="confirm-container">
+    <h2 class="confirm-title">📝 Formulario de Adopción</h2>
+
+    <div class="summary-card">
+        <img src="{{ url_for('static', filename='img/' + dog.image_filename) }}" alt="{{ dog.name }}" class="summary-img">
+        <div class="summary-info">
+            <h3>Estás adoptando a: {{ dog.name }}</h3>
+            <p>Raza: {{ dog.breed }} | Edad: {{ dog.age }} años</p>
+        </div>
+    </div>
+
+    <form action="/confirmar_adopcion" method="POST">
+        <input type="hidden" name="dog_id" value="{{ dog.id }}">
+
+        <div class="input-group">
+            <label for="name">Tu Nombre(s):</label>
+            <input type="text" id="name" name="name" class="input-field" placeholder="Ej. Emely" required>
+        </div>
+
+        <div class="input-group">
+            <label for="lastname">Tus Apellidos:</label>
+            <input type="text" id="lastname" name="lastname" class="input-field" placeholder="Ej. Rodríguez" required>
+        </div>
+
+        <div class="input-group">
+            <label for="id_card">Documento de Identidad (DUI / Cédula):</label>
+            <input type="text" id="id_card" name="id_card" class="input-field" placeholder="Ej. 12345678-9" required>
+        </div>
+
+        <div class="input-group">
+            <label for="address">Dirección de tu Hogar:</label>
+            <input type="text" id="address" name="address" class="input-field" placeholder="Ej. San Salvador, Colonia Escalón" required>
+        </div>
+
+        <button type="submit" class="btn-confirm">✅ Registrar Adopción</button>
+    </form>
+</div>
+{% endblock %}

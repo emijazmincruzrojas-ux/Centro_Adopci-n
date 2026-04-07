@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="form-container">
+    <h1 class="form-title">🎉 Familias Felices: Historial de Adopciones</h1>
+
+    <div class="selected-dog-card">
+        <p style="text-align: center; width: 100%; color: #7f8c8d; margin: 0;">
+            Aquí celebramos a los perritos que ya encontraron su hogar definitivo.
+        </p>
+    </div>
+
+    <div style="display: grid; gap: 20px;">
+        {% for adopt in adoptions %}
+        <div style="display: flex; align-items: center; background: #ffffff; padding: 15px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;">
+            
+            <img src="{{ url_for('static', filename='img/' + adopt[4]) }}" alt="{{ adopt[2] }}" 
+                 style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px; border: 3px solid #ff6b6b;">
+            
+            <div style="flex: 1;">
+                <h3 style="margin: 0 0 5px 0; color: #ff6b6b;">🐶 ¡{{ adopt[2] }} fue adoptado!</h3>
+                <p style="margin: 0; color: #2c3e50; font-size: 14px;"><strong>Familia:</strong> {{ adopt[0] }} {{ adopt[1] }}</p>
+                <p style="margin: 0; color: #7f8c8d; font-size: 13px;">Raza: {{ adopt[3] }}</p>
+            </div>
+            
+            <div style="font-size: 24px; color: #ff6b6b; padding: 10px;">💖</div>
+        </div>
+        {% else %}
+        <div style="text-align: center; padding: 40px 20px; color: #7f8c8d;">
+            😔 Aún no hay adopciones registradas. ¡Sé el primero en darle un hogar a un perrito!
+        </div>
+        {% endfor %}
+    </div>
+
+    <div style="margin-top: 30px;">
+        <a href="/" class="btn-submit" style="text-decoration: none; display: block; text-align: center;">🔙 Volver al Catálogo</a>
+    </div>
+</div>
+{% endblock %}
