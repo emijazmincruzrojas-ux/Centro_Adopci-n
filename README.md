@@ -24,8 +24,7 @@ Aplicación web desarrollada con Flask y MariaDB para gestionar un centro de ado
 
 ## 📦 Instalación
 
-git clone https://github.com/TU_USUARIO/centro-adopcion.git
-cd centro-adopcion
+git clone https://github.com/emijazmincruzrojas-ux/Centro_Adopci-n.git
 
 python -m venv venv
 source venv/bin/activate
@@ -49,13 +48,19 @@ http://127.0.0.1:5000
 
 ---
 
-## 📸 Capturas
+## 📸 Capturas del sistema
 
-![Inicio](imagenes/inicio.png)
+### 🐶 Catálogo de mascotas
 ![Catalogo](imagenes/catalogo.png)
-![Confirmacion](imagenes/confirmacion.png)
 
----
+### 📋 Historial de adopciones
+![Historial](imagenes/historial.png)
+
+### 📝 Formulario de adopción
+![Formulario](imagenes/formulario.png)
+
+### 🎉 Confirmación de adopción
+![Confirmacion](imagenes/confirmacion.png)
 
 ## 👩‍💻 Autora
 
