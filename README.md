@@ -1,7 +1,11 @@
 # 🐾 Centro de Adopción
 
-Aplicación web desarrollada con Flask y MariaDB para gestionar un centro de adopción de mascotas.
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-Framework-000000?logo=flask)
+![MariaDB](https://img.shields.io/badge/MariaDB-Database-003545?logo=mariadb)
+![Estado](https://img.shields.io/badge/Estado-Activo-brightgreen)
 
+> Aplicación web para gestionar un centro de adopción de mascotas 🐶💙
 ---
 
 ## 🚀 Características
