@@ -1,15 +1,29 @@
 # 🐾 Centro de Adopción
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white">
+  <img src="imagenes/catalogo.png" width="800">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white">
   <img src="https://img.shields.io/badge/Flask-Framework-000000?logo=flask">
   <img src="https://img.shields.io/badge/MariaDB-Database-003545?logo=mariadb">
   <img src="https://img.shields.io/badge/Estado-Activo-brightgreen">
 </p>
 
 <p align="center">
-  Aplicación web para gestionar un centro de adopción de mascotas 🐶💙
+Sistema web desarrollado con Flask y MariaDB que permite gestionar un centro de adopción de mascotas, facilitando el registro, consulta y adopción de animales de manera eficiente 🐶💙
 </p>
+
+---
+
+## 🎬 Demo
+
+<p align="center">
+  <img src="imagenes/catalogo.png" width="600">
+</p>
+
+👉 Simulación del funcionamiento del sistema de adopción de mascotas.
 
 ---
 
@@ -44,6 +58,15 @@
 ✔ Historial de adopciones  
 ✔ Confirmación de adopción  
 ✔ Conexión a base de datos  
+
+---
+
+## 📌 Funcionalidades principales
+
+- Gestión de mascotas disponibles 🐶  
+- Registro de adopciones 📋  
+- Visualización de historial 📊  
+- Interfaz amigable 💻  
 
 ---
 
